@@ -1,0 +1,101 @@
+{% comment %}
+  DVB timestamps look like "/Date(1791363960000-0000)/": epoch milliseconds in UTC.
+  Liquid's date filter has no time zone support, so times are shifted by the
+  user's UTC offset and then formatted as if they were UTC.
+  VVO's docs only name CancelReasons for cancellations, but clients also see State "Cancelled".
+{% endcomment %}
+{% template departure_time %}
+{%- assign actual = departure.RealTime | default: departure.ScheduledTime | slice: 6, 10 | plus: 0 -%}
+{%- assign time = actual | plus: utc_offset | date: "%H:%M" -%}
+{%- if departure.State == "Cancelled" or departure.CancelReasons.size > 0 %}<s>{{ time }}</s>{% else %}{{ time }}{% endif -%}
+{% endtemplate %}
+
+{% template departure_board %}
+{% assign walk = walk_minutes | plus: 0 %}
+{% if walk > 0 %}
+  {% comment %}
+    The timestamps share one fixed-width format, so comparing them as strings
+    compares the times. A departure without RealTime counts with its scheduled time.
+  {% endcomment %}
+  {% assign walk_seconds = walk | times: 60 | round %}
+  {% assign cutoff = "now" | date: "%s" | plus: walk_seconds | prepend: "/Date(" | append: "000" %}
+  {% assign departures = departures | where_exp: "d", "d.RealTime >= cutoff or d.RealTime == nil and d.ScheduledTime >= cutoff" %}
+{% endif %}
+<div class="layout layout--col layout--top layout--stretch-x">
+  {% if departures.size > 0 %}
+    <div class="columns" data-overflow-max-cols="{{ cols }}">
+      <div class="column">
+        {% if view == "list" %}
+          {% for departure in departures %}
+            {% assign scheduled = departure.ScheduledTime | slice: 6, 10 | plus: 0 %}
+            {% assign actual = departure.RealTime | default: departure.ScheduledTime | slice: 6, 10 | plus: 0 %}
+            {% assign delay = actual | minus: scheduled | divided_by: 60 %}
+            {% if departure.State == "Cancelled" or departure.CancelReasons.size > 0 %}{% assign delay = 0 %}{% endif %}
+            <div class="item departure">
+              <div class="content">
+                <div class="flex flex--row flex--center-y gap--small">
+                  <span class="value value--xsmall value--tnums w--14 flex-none">{% render "departure_time", departure: departure, utc_offset: utc_offset %}</span>
+                  <span class="label label--small w--6 flex-none">{% if delay > 0 %}+{{ delay }}{% elsif delay < 0 %}{{ delay }}{% endif %}</span>
+                  <span class="label label--inverted w--12 flex flex--center-x flex-none">{{ departure.LineName }}</span>
+                  {% comment %} The clamp engine fits text to the label's own width, so the label takes the space left in the row and the fixed columns never shrink. {% endcomment %}
+                  <span class="label flex-auto" style="min-width: 0" data-clamp="1">{{ departure.Direction }}</span>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        {% else %}
+          {% comment %}
+            Liquid can't group by two fields, so each line and direction becomes an
+            "epoch|line|direction" key for its first departure. Epochs have ten digits,
+            so sorting the keys as strings orders groups by their soonest real-time departure.
+          {% endcomment %}
+          {% assign keys = "" %}
+          {% for departure in departures %}
+            {% assign key = "|" | append: departure.LineName | append: "|" | append: departure.Direction | append: "^" %}
+            {% unless keys contains key %}
+              {% assign actual = departure.RealTime | default: departure.ScheduledTime | slice: 6, 10 %}
+              {% assign keys = keys | append: actual | append: key %}
+            {% endunless %}
+          {% endfor %}
+          {% assign groups = keys | split: "^" | sort %}
+          {% for group in groups %}
+            {% assign parts = group | split: "|" %}
+            {% comment %} split drops a trailing empty field, and where with nil would match every direction. {% endcomment %}
+            {% assign direction = parts[2] | default: "" %}
+            {% assign line_departures = departures | where: "LineName", parts[1] | where: "Direction", direction %}
+            <div class="item group">
+              <div class="content">
+                <div class="flex flex--row flex--center-y gap--medium">
+                  <div class="line bg--black rounded--small w--16 h--12 flex flex--center-x flex--center-y flex-none">
+                    {% comment %} Shrink long names like "RJ 382" so every badge keeps one width and directions stay aligned. {% endcomment %}
+                    {% if parts[1].size > 4 %}{% assign size = "xxsmall" %}{% elsif parts[1].size > 3 %}{% assign size = "xsmall" %}{% else %}{% assign size = "small" %}{% endif %}
+                    <span class="value value--{{ size }} text--white">{{ parts[1] }}</span>
+                  </div>
+                  <div class="flex flex--col flex--left">
+                    <span class="direction title" data-clamp="1">{{ direction }}</span>
+                    <div class="flex flex--row gap--medium">
+                      {% for departure in line_departures limit: 4 %}
+                        <span class="value value--xsmall value--tnums">{% render "departure_time", departure: departure, utc_offset: utc_offset %}</span>
+                      {% endfor %}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        {% endif %}
+      </div>
+    </div>
+  {% elsif status.Message %}
+    {% comment %} Usually a mistyped stop ID, which would otherwise look like a quiet stop. {% endcomment %}
+    <span class="title">{{ status.Message }}</span>
+  {% else %}
+    <span class="title">No departures</span>
+  {% endif %}
+</div>
+
+<div class="title_bar">
+  <span class="title">{{ stop | default: "DVB" }}</span>
+  <span class="instance">{% if walk > 0 %}{{ walk }} min walk · {% endif %}{{ "now" | date: "%s" | plus: utc_offset | date: "%H:%M" }}</span>
+</div>
+{% endtemplate %}

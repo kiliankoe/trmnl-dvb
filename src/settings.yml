@@ -1,0 +1,53 @@
+---
+strategy: polling
+no_screen_padding: 'no'
+dark_mode: 'no'
+static_data: ''
+polling_verb: get
+framework_version: latest
+serverless_language:
+refresh_interval_floor:
+polling_url: https://webapi.vvo-online.de/dm?stopid={{ stop_id }}&limit=60&format=json
+polling_headers:
+polling_body:
+id: 498573
+oauth_enabled: 'false'
+oauth_pkce_enabled: 'no'
+oauth_authorize_url: ''
+oauth_token_url: ''
+oauth_scopes: ''
+oauth_scope_separator: ''
+oauth_refresh_url: ''
+oauth_auth_params: ''
+oauth_token_site: ''
+oauth_token_request_auth_method: ''
+oauth_body_format: ''
+oauth_token_response_metadata: ''
+oauth_authorization_method: ''
+oauth_refresh_params: ''
+oauth_token_field_name: ''
+oauth_expiry_field_name: ''
+oauth_expiry_strategy: ''
+oauth_fixed_expiry_ms: ''
+custom_fields:
+- keyname: stop_id
+  field_type: string
+  name: Stop ID
+  description: Numeric VVO stop ID, e.g. 33000013 for Albertplatz. See the README for how to look one up.
+  placeholder: '33000013'
+- keyname: view
+  field_type: select
+  name: View
+  description: Group departures by line and direction, or list them in order.
+  options:
+  - Grouped by line: grouped
+  - Chronological list: list
+  default: grouped
+- keyname: walk_minutes
+  field_type: number
+  name: Walking time
+  description: Minutes it takes you to reach the stop. Departures you can't catch are hidden.
+  optional: true
+name: DVB Departures
+description: Departure board for a DVB stop
+refresh_interval: 15

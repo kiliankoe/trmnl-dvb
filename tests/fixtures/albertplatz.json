@@ -1,0 +1,891 @@
+{
+  "Name": "Albertplatz",
+  "Status": {
+    "Code": "Ok"
+  },
+  "Place": "Dresden",
+  "ExpirationTime": "/Date(1791364012900+0200)/",
+  "Departures": [
+    {
+      "Id": "voe:11003: :H:j26",
+      "DlId": "de:vvo:11-3",
+      "LineName": "3",
+      "Direction": "Wilder Mann",
+      "Platform": {
+        "Name": "2",
+        "Type": "Platform"
+      },
+      "Mot": "Tram",
+      "RealTime": "/Date(1791363960000-0000)/",
+      "ScheduledTime": "/Date(1791363720000-0000)/",
+      "State": "Delayed",
+      "RouteChanges": [],
+      "Diva": {
+        "Number": "11003",
+        "Network": "voe"
+      },
+      "CancelReasons": [],
+      "Occupancy": "Unknown"
+    },
+    {
+      "Id": "voe:11011: :H:j26",
+      "DlId": "de:vvo:11-11",
+      "LineName": "11",
+      "Direction": "Zschertnitz",
+      "Platform": {
+        "Name": "3",
+        "Type": "Platform"
+      },
+      "Mot": "Tram",
+      "RealTime": "/Date(1791364020000-0000)/",
+      "ScheduledTime": "/Date(1791363900000-0000)/",
+      "State": "Delayed",
+      "RouteChanges": [],
+      "Diva": {
+        "Number": "11011",
+        "Network": "voe"
+      },
+      "CancelReasons": [],
+      "Occupancy": "ManySeats"
+    },
+    {
+      "Id": "voe:11007: :R:j26",
+      "DlId": "de:vvo:11-7",
+      "LineName": "7",
+      "Direction": "Weixdorf",
+      "Platform": {
+        "Name": "2",
+        "Type": "Platform"
+      },
+      "Mot": "Tram",
+      "RealTime": "/Date(1791364020000-0000)/",
+      "ScheduledTime": "/Date(1791363960000-0000)/",
+      "State": "Delayed",
+      "RouteChanges": [
+        "27519"
+      ],
+      "Diva": {
+        "Number": "11007",
+        "Network": "voe"
+      },
+      "CancelReasons": [],
+      "Occupancy": "ManySeats"
+    },
+    {
+      "Id": "voe:11006: :R:j26",
+      "DlId": "de:vvo:11-6",
+      "LineName": "6",
+      "Direction": "Niedersedlitz",
+      "Platform": {
+        "Name": "4",
+        "Type": "Platform"
+      },
+      "Mot": "Tram",
+      "RealTime": "/Date(1791364020000-0000)/",
+      "ScheduledTime": "/Date(1791364080000-0000)/",
+      "State": "InTime",
+      "RouteChanges": [],
+      "Diva": {
+        "Number": "11006",
+        "Network": "voe"
+      },
+      "CancelReasons": [],
+      "Occupancy": "ManySeats"
+    },
+    {
+      "Id": "voe:11003: :R:j26",
+      "DlId": "de:vvo:11-3",
+      "LineName": "3",
+      "Direction": "Coschütz",
+      "Platform": {
+        "Name": "1",
+        "Type": "Platform"
+      },
+      "Mot": "Tram",
+      "RealTime": "/Date(1791364080000-0000)/",
+      "ScheduledTime": "/Date(1791364020000-0000)/",
+      "State": "Cancelled",
+      "RouteChanges": [],
+      "Diva": {
+        "Number": "11003",
+        "Network": "voe"
+      },
+      "CancelReasons": [],
+      "Occupancy": "ManySeats"
+    },
+    {
+      "Id": "voe:11006: :H:j26",
+      "DlId": "de:vvo:11-6",
+      "LineName": "6",
+      "Direction": "Wölfnitz",
+      "Platform": {
+        "Name": "3",
+        "Type": "Platform"
+      },
+      "Mot": "Tram",
+      "ScheduledTime": "/Date(1791364140000-0000)/",
+      "RouteChanges": [],
+      "Diva": {
+        "Number": "11006",
+        "Network": "voe"
+      },
+      "CancelReasons": [],
+      "Occupancy": "ManySeats"
+    },
+    {
+      "Id": "voe:11008: :R:j26",
+      "DlId": "de:vvo:11-8",
+      "LineName": "8",
+      "Direction": "Hellerau",
+      "Platform": {
+        "Name": "3",
+        "Type": "Platform"
+      },
+      "Mot": "Tram",
+      "RealTime": "/Date(1791364200000-0000)/",
+      "ScheduledTime": "/Date(1791364200000-0000)/",
+      "State": "InTime",
+      "RouteChanges": [
+        "27447",
+        "27519"
+      ],
+      "Diva": {
+        "Number": "11008",
+        "Network": "voe"
+      },
+      "CancelReasons": [],
+      "Occupancy": "ManySeats"
+    },
+    {
+      "Id": "voe:11008: :H:j26",
+      "DlId": "de:vvo:11-8",
+      "LineName": "8",
+      "Direction": "Südvorstadt",
+      "Platform": {
+        "Name": "4",
+        "Type": "Platform"
+      },
+      "Mot": "Tram",
+      "RealTime": "/Date(1791364320000-0000)/",
+      "ScheduledTime": "/Date(1791364140000-0000)/",
+      "State": "Delayed",
+      "RouteChanges": [
+        "27447",
+        "27519"
+      ],
+      "Diva": {
+        "Number": "11008",
+        "Network": "voe"
+      },
+      "CancelReasons": [
+        "Fahrzeugstörung"
+      ],
+      "Occupancy": "ManySeats"
+    },
+    {
+      "Id": "voe:11003: :H:j26",
+      "DlId": "de:vvo:11-3",
+      "LineName": "3",
+      "Direction": "Wilder Mann",
+      "Platform": {
+        "Name": "2",
+        "Type": "Platform"
+      },
+      "Mot": "Tram",
+      "RealTime": "/Date(1791364320000-0000)/",
+      "ScheduledTime": "/Date(1791364320000-0000)/",
+      "State": "InTime",
+      "RouteChanges": [],
+      "Diva": {
+        "Number": "11003",
+        "Network": "voe"
+      },
+      "CancelReasons": [],
+      "Occupancy": "ManySeats"
+    },
+    {
+      "Id": "voe:11011: :R:j26",
+      "DlId": "de:vvo:11-11",
+      "LineName": "11",
+      "Direction": "Bühlau",
+      "Platform": {
+        "Name": "4",
+        "Type": "Platform"
+      },
+      "Mot": "Tram",
+      "RealTime": "/Date(1791364380000-0000)/",
+      "ScheduledTime": "/Date(1791364380000-0000)/",
+      "State": "InTime",
+      "RouteChanges": [],
+      "Diva": {
+        "Number": "11011",
+        "Network": "voe"
+      },
+      "CancelReasons": [],
+      "Occupancy": "ManySeats"
+    },
+    {
+      "Id": "voe:11007: :H:j26",
+      "DlId": "de:vvo:11-7",
+      "LineName": "RJ 382",
+      "Direction": "Padborg st",
+      "Platform": {
+        "Name": "1",
+        "Type": "Platform"
+      },
+      "Mot": "Tram",
+      "RealTime": "/Date(1791364500000-0000)/",
+      "ScheduledTime": "/Date(1791364440000-0000)/",
+      "State": "Delayed",
+      "RouteChanges": [
+        "27519"
+      ],
+      "Diva": {
+        "Number": "11007",
+        "Network": "voe"
+      },
+      "CancelReasons": [],
+      "Occupancy": "ManySeats"
+    },
+    {
+      "Id": "voe:11011: :H:j26",
+      "DlId": "de:vvo:11-11",
+      "LineName": "RB60",
+      "Direction": "Görlitz Bahnhof",
+      "Platform": {
+        "Name": "3",
+        "Type": "Platform"
+      },
+      "Mot": "Tram",
+      "RealTime": "/Date(1791364500000-0000)/",
+      "ScheduledTime": "/Date(1791364500000-0000)/",
+      "State": "InTime",
+      "RouteChanges": [],
+      "Diva": {
+        "Number": "11011",
+        "Network": "voe"
+      },
+      "CancelReasons": [],
+      "Occupancy": "Unknown"
+    },
+    {
+      "Id": "voe:11003: :R:j26",
+      "DlId": "de:vvo:11-3",
+      "LineName": "3",
+      "Direction": "Coschütz",
+      "Platform": {
+        "Name": "1",
+        "Type": "Platform"
+      },
+      "Mot": "Tram",
+      "RealTime": "/Date(1791364620000-0000)/",
+      "ScheduledTime": "/Date(1791364620000-0000)/",
+      "State": "InTime",
+      "RouteChanges": [],
+      "Diva": {
+        "Number": "11003",
+        "Network": "voe"
+      },
+      "CancelReasons": [],
+      "Occupancy": "ManySeats"
+    },
+    {
+      "Id": "voe:11007: :R:j26",
+      "DlId": "de:vvo:11-7",
+      "LineName": "7",
+      "Direction": "Weixdorf",
+      "Platform": {
+        "Name": "2",
+        "Type": "Platform"
+      },
+      "Mot": "Tram",
+      "RealTime": "/Date(1791364680000-0000)/",
+      "ScheduledTime": "/Date(1791364560000-0000)/",
+      "State": "Delayed",
+      "RouteChanges": [
+        "27519"
+      ],
+      "Diva": {
+        "Number": "11007",
+        "Network": "voe"
+      },
+      "CancelReasons": [],
+      "Occupancy": "ManySeats"
+    },
+    {
+      "Id": "voe:11008: :H:j26",
+      "DlId": "de:vvo:11-8",
+      "LineName": "8",
+      "Direction": "Südvorstadt",
+      "Platform": {
+        "Name": "4",
+        "Type": "Platform"
+      },
+      "Mot": "Tram",
+      "RealTime": "/Date(1791364740000-0000)/",
+      "ScheduledTime": "/Date(1791364740000-0000)/",
+      "State": "InTime",
+      "RouteChanges": [
+        "27447",
+        "27519"
+      ],
+      "Diva": {
+        "Number": "11008",
+        "Network": "voe"
+      },
+      "CancelReasons": [],
+      "Occupancy": "ManySeats"
+    },
+    {
+      "Id": "voe:11006: :R:j26",
+      "DlId": "de:vvo:11-6",
+      "LineName": "6",
+      "Direction": "Niedersedlitz",
+      "Platform": {
+        "Name": "4",
+        "Type": "Platform"
+      },
+      "Mot": "Tram",
+      "RealTime": "/Date(1791364800000-0000)/",
+      "ScheduledTime": "/Date(1791364680000-0000)/",
+      "State": "Delayed",
+      "RouteChanges": [],
+      "Diva": {
+        "Number": "11006",
+        "Network": "voe"
+      },
+      "CancelReasons": [],
+      "Occupancy": "ManySeats"
+    },
+    {
+      "Id": "voe:11008: :R:j26",
+      "DlId": "de:vvo:11-8",
+      "LineName": "8",
+      "Direction": "Hellerau",
+      "Platform": {
+        "Name": "3",
+        "Type": "Platform"
+      },
+      "Mot": "Tram",
+      "RealTime": "/Date(1791364800000-0000)/",
+      "ScheduledTime": "/Date(1791364800000-0000)/",
+      "State": "InTime",
+      "RouteChanges": [
+        "27447",
+        "27519"
+      ],
+      "Diva": {
+        "Number": "11008",
+        "Network": "voe"
+      },
+      "CancelReasons": [],
+      "Occupancy": "ManySeats"
+    },
+    {
+      "Id": "voe:11006: :H:j26",
+      "DlId": "de:vvo:11-6",
+      "LineName": "6",
+      "Direction": "Wölfnitz",
+      "Platform": {
+        "Name": "3",
+        "Type": "Platform"
+      },
+      "Mot": "Tram",
+      "RealTime": "/Date(1791364920000-0000)/",
+      "ScheduledTime": "/Date(1791364740000-0000)/",
+      "State": "Delayed",
+      "RouteChanges": [],
+      "Diva": {
+        "Number": "11006",
+        "Network": "voe"
+      },
+      "CancelReasons": [],
+      "Occupancy": "ManySeats"
+    },
+    {
+      "Id": "voe:11003: :H:j26",
+      "DlId": "de:vvo:11-3",
+      "LineName": "3",
+      "Direction": "Wilder Mann",
+      "Platform": {
+        "Name": "2",
+        "Type": "Platform"
+      },
+      "Mot": "Tram",
+      "RealTime": "/Date(1791364920000-0000)/",
+      "ScheduledTime": "/Date(1791364920000-0000)/",
+      "State": "InTime",
+      "RouteChanges": [],
+      "Diva": {
+        "Number": "11003",
+        "Network": "voe"
+      },
+      "CancelReasons": [],
+      "Occupancy": "ManySeats"
+    },
+    {
+      "Id": "voe:11011: :R:j26",
+      "DlId": "de:vvo:11-11",
+      "LineName": "11",
+      "Direction": "Bühlau",
+      "Platform": {
+        "Name": "4",
+        "Type": "Platform"
+      },
+      "Mot": "Tram",
+      "RealTime": "/Date(1791364980000-0000)/",
+      "ScheduledTime": "/Date(1791364980000-0000)/",
+      "State": "InTime",
+      "RouteChanges": [],
+      "Diva": {
+        "Number": "11011",
+        "Network": "voe"
+      },
+      "CancelReasons": [],
+      "Occupancy": "ManySeats"
+    },
+    {
+      "Id": "voe:11007: :H:j26",
+      "DlId": "de:vvo:11-7",
+      "LineName": "7",
+      "Direction": "Gorbitz",
+      "Platform": {
+        "Name": "1",
+        "Type": "Platform"
+      },
+      "Mot": "Tram",
+      "RealTime": "/Date(1791365040000-0000)/",
+      "ScheduledTime": "/Date(1791365040000-0000)/",
+      "State": "InTime",
+      "RouteChanges": [
+        "27519"
+      ],
+      "Diva": {
+        "Number": "11007",
+        "Network": "voe"
+      },
+      "CancelReasons": [],
+      "Occupancy": "ManySeats"
+    },
+    {
+      "Id": "voe:15261: :R:j26",
+      "DlId": "de:vvo:15-261-b",
+      "LineName": "261",
+      "Direction": "Sebnitz",
+      "Platform": {
+        "Name": "5",
+        "Type": "Platform"
+      },
+      "Mot": "PlusBus",
+      "RealTime": "/Date(1791365040000-0000)/",
+      "ScheduledTime": "/Date(1791365040000-0000)/",
+      "State": "InTime",
+      "RouteChanges": [
+        "26951",
+        "27681"
+      ],
+      "Diva": {
+        "Number": "15261",
+        "Network": "voe"
+      },
+      "CancelReasons": [],
+      "Occupancy": "Unknown"
+    },
+    {
+      "Id": "voe:11011: :H:j26",
+      "DlId": "de:vvo:11-11",
+      "LineName": "11",
+      "Direction": "Zschertnitz",
+      "Platform": {
+        "Name": "3",
+        "Type": "Platform"
+      },
+      "Mot": "Tram",
+      "RealTime": "/Date(1791365100000-0000)/",
+      "ScheduledTime": "/Date(1791365100000-0000)/",
+      "State": "InTime",
+      "RouteChanges": [],
+      "Diva": {
+        "Number": "11011",
+        "Network": "voe"
+      },
+      "CancelReasons": [],
+      "Occupancy": "ManySeats"
+    },
+    {
+      "Id": "voe:11007: :R:j26",
+      "DlId": "de:vvo:11-7",
+      "LineName": "7",
+      "Direction": "Weixdorf",
+      "Platform": {
+        "Name": "2",
+        "Type": "Platform"
+      },
+      "Mot": "Tram",
+      "RealTime": "/Date(1791365160000-0000)/",
+      "ScheduledTime": "/Date(1791365160000-0000)/",
+      "State": "InTime",
+      "RouteChanges": [
+        "27519"
+      ],
+      "Diva": {
+        "Number": "11007",
+        "Network": "voe"
+      },
+      "CancelReasons": [],
+      "Occupancy": "ManySeats"
+    },
+    {
+      "Id": "voe:11003: :R:j26",
+      "DlId": "de:vvo:11-3",
+      "LineName": "3",
+      "Direction": "Coschütz",
+      "Platform": {
+        "Name": "1",
+        "Type": "Platform"
+      },
+      "Mot": "Tram",
+      "RealTime": "/Date(1791365220000-0000)/",
+      "ScheduledTime": "/Date(1791365220000-0000)/",
+      "State": "InTime",
+      "RouteChanges": [],
+      "Diva": {
+        "Number": "11003",
+        "Network": "voe"
+      },
+      "CancelReasons": [],
+      "Occupancy": "ManySeats"
+    },
+    {
+      "Id": "voe:11006: :R:j26",
+      "DlId": "de:vvo:11-6",
+      "LineName": "6",
+      "Direction": "Niedersedlitz",
+      "Platform": {
+        "Name": "4",
+        "Type": "Platform"
+      },
+      "Mot": "Tram",
+      "RealTime": "/Date(1791365280000-0000)/",
+      "ScheduledTime": "/Date(1791365280000-0000)/",
+      "State": "InTime",
+      "RouteChanges": [],
+      "Diva": {
+        "Number": "11006",
+        "Network": "voe"
+      },
+      "CancelReasons": [],
+      "Occupancy": "Unknown"
+    },
+    {
+      "Id": "voe:11006: :H:j26",
+      "DlId": "de:vvo:11-6",
+      "LineName": "6",
+      "Direction": "Wölfnitz",
+      "Platform": {
+        "Name": "3",
+        "Type": "Platform"
+      },
+      "Mot": "Tram",
+      "RealTime": "/Date(1791365340000-0000)/",
+      "ScheduledTime": "/Date(1791365340000-0000)/",
+      "State": "InTime",
+      "RouteChanges": [],
+      "Diva": {
+        "Number": "11006",
+        "Network": "voe"
+      },
+      "CancelReasons": [],
+      "Occupancy": "ManySeats"
+    },
+    {
+      "Id": "voe:11008: :H:j26",
+      "DlId": "de:vvo:11-8",
+      "LineName": "8",
+      "Direction": "Südvorstadt",
+      "Platform": {
+        "Name": "4",
+        "Type": "Platform"
+      },
+      "Mot": "Tram",
+      "RealTime": "/Date(1791365340000-0000)/",
+      "ScheduledTime": "/Date(1791365340000-0000)/",
+      "State": "InTime",
+      "RouteChanges": [
+        "27447",
+        "27519"
+      ],
+      "Diva": {
+        "Number": "11008",
+        "Network": "voe"
+      },
+      "CancelReasons": [],
+      "Occupancy": "ManySeats"
+    },
+    {
+      "Id": "voe:11008: :R:j26",
+      "DlId": "de:vvo:11-8",
+      "LineName": "8",
+      "Direction": "Hellerau",
+      "Platform": {
+        "Name": "3",
+        "Type": "Platform"
+      },
+      "Mot": "Tram",
+      "RealTime": "/Date(1791365400000-0000)/",
+      "ScheduledTime": "/Date(1791365400000-0000)/",
+      "State": "InTime",
+      "RouteChanges": [
+        "27447",
+        "27519"
+      ],
+      "Diva": {
+        "Number": "11008",
+        "Network": "voe"
+      },
+      "CancelReasons": [],
+      "Occupancy": "Unknown"
+    },
+    {
+      "Id": "voe:11003: :H:j26",
+      "DlId": "de:vvo:11-3",
+      "LineName": "3",
+      "Direction": "Wilder Mann",
+      "Platform": {
+        "Name": "2",
+        "Type": "Platform"
+      },
+      "Mot": "Tram",
+      "RealTime": "/Date(1791365520000-0000)/",
+      "ScheduledTime": "/Date(1791365520000-0000)/",
+      "State": "InTime",
+      "RouteChanges": [],
+      "Diva": {
+        "Number": "11003",
+        "Network": "voe"
+      },
+      "CancelReasons": [],
+      "Occupancy": "Unknown"
+    },
+    {
+      "Id": "voe:11011: :R:j26",
+      "DlId": "de:vvo:11-11",
+      "LineName": "11",
+      "Direction": "Bühlau",
+      "Platform": {
+        "Name": "4",
+        "Type": "Platform"
+      },
+      "Mot": "Tram",
+      "RealTime": "/Date(1791365580000-0000)/",
+      "ScheduledTime": "/Date(1791365580000-0000)/",
+      "State": "InTime",
+      "RouteChanges": [],
+      "Diva": {
+        "Number": "11011",
+        "Network": "voe"
+      },
+      "CancelReasons": [],
+      "Occupancy": "ManySeats"
+    },
+    {
+      "Id": "voe:11007: :H:j26",
+      "DlId": "de:vvo:11-7",
+      "LineName": "7",
+      "Direction": "Pennrich",
+      "Platform": {
+        "Name": "1",
+        "Type": "Platform"
+      },
+      "Mot": "Tram",
+      "RealTime": "/Date(1791365640000-0000)/",
+      "ScheduledTime": "/Date(1791365640000-0000)/",
+      "State": "InTime",
+      "RouteChanges": [
+        "27519"
+      ],
+      "Diva": {
+        "Number": "11007",
+        "Network": "voe"
+      },
+      "CancelReasons": [],
+      "Occupancy": "ManySeats"
+    },
+    {
+      "Id": "voe:11011: :H:j26",
+      "DlId": "de:vvo:11-11",
+      "LineName": "11",
+      "Direction": "Zschertnitz",
+      "Platform": {
+        "Name": "3",
+        "Type": "Platform"
+      },
+      "Mot": "Tram",
+      "RealTime": "/Date(1791365700000-0000)/",
+      "ScheduledTime": "/Date(1791365700000-0000)/",
+      "State": "InTime",
+      "RouteChanges": [],
+      "Diva": {
+        "Number": "11011",
+        "Network": "voe"
+      },
+      "CancelReasons": [],
+      "Occupancy": "ManySeats"
+    },
+    {
+      "Id": "voe:11007: :R:j26",
+      "DlId": "de:vvo:11-7",
+      "LineName": "7",
+      "Direction": "Weixdorf",
+      "Platform": {
+        "Name": "2",
+        "Type": "Platform"
+      },
+      "Mot": "Tram",
+      "RealTime": "/Date(1791365760000-0000)/",
+      "ScheduledTime": "/Date(1791365760000-0000)/",
+      "State": "InTime",
+      "RouteChanges": [
+        "27519"
+      ],
+      "Diva": {
+        "Number": "11007",
+        "Network": "voe"
+      },
+      "CancelReasons": [],
+      "Occupancy": "ManySeats"
+    },
+    {
+      "Id": "voe:11003: :R:j26",
+      "DlId": "de:vvo:11-3",
+      "LineName": "3",
+      "Direction": "Coschütz",
+      "Platform": {
+        "Name": "1",
+        "Type": "Platform"
+      },
+      "Mot": "Tram",
+      "RealTime": "/Date(1791365820000-0000)/",
+      "ScheduledTime": "/Date(1791365820000-0000)/",
+      "State": "InTime",
+      "RouteChanges": [],
+      "Diva": {
+        "Number": "11003",
+        "Network": "voe"
+      },
+      "CancelReasons": [],
+      "Occupancy": "Unknown"
+    },
+    {
+      "Id": "voe:11006: :R:j26",
+      "DlId": "de:vvo:11-6",
+      "LineName": "6",
+      "Direction": "Niedersedlitz",
+      "Platform": {
+        "Name": "4",
+        "Type": "Platform"
+      },
+      "Mot": "Tram",
+      "RealTime": "/Date(1791365880000-0000)/",
+      "ScheduledTime": "/Date(1791365880000-0000)/",
+      "State": "InTime",
+      "RouteChanges": [],
+      "Diva": {
+        "Number": "11006",
+        "Network": "voe"
+      },
+      "CancelReasons": [],
+      "Occupancy": "ManySeats"
+    },
+    {
+      "Id": "voe:11008: :H:j26",
+      "DlId": "de:vvo:11-8",
+      "LineName": "8",
+      "Direction": "Südvorstadt",
+      "Platform": {
+        "Name": "4",
+        "Type": "Platform"
+      },
+      "Mot": "Tram",
+      "RealTime": "/Date(1791365940000-0000)/",
+      "ScheduledTime": "/Date(1791365940000-0000)/",
+      "State": "InTime",
+      "RouteChanges": [
+        "27447",
+        "27519"
+      ],
+      "Diva": {
+        "Number": "11008",
+        "Network": "voe"
+      },
+      "CancelReasons": [],
+      "Occupancy": "ManySeats"
+    },
+    {
+      "Id": "voe:11006: :H:j26",
+      "DlId": "de:vvo:11-6",
+      "LineName": "6",
+      "Direction": "Wölfnitz",
+      "Platform": {
+        "Name": "3",
+        "Type": "Platform"
+      },
+      "Mot": "Tram",
+      "RealTime": "/Date(1791365940000-0000)/",
+      "ScheduledTime": "/Date(1791365940000-0000)/",
+      "State": "InTime",
+      "RouteChanges": [],
+      "Diva": {
+        "Number": "11006",
+        "Network": "voe"
+      },
+      "CancelReasons": [],
+      "Occupancy": "ManySeats"
+    },
+    {
+      "Id": "voe:11008: :R:j26",
+      "DlId": "de:vvo:11-8",
+      "LineName": "8",
+      "Direction": "Hellerau",
+      "Platform": {
+        "Name": "3",
+        "Type": "Platform"
+      },
+      "Mot": "Tram",
+      "RealTime": "/Date(1791366000000-0000)/",
+      "ScheduledTime": "/Date(1791366000000-0000)/",
+      "State": "InTime",
+      "RouteChanges": [
+        "27447",
+        "27519"
+      ],
+      "Diva": {
+        "Number": "11008",
+        "Network": "voe"
+      },
+      "CancelReasons": [],
+      "Occupancy": "ManySeats"
+    },
+    {
+      "Id": "voe:11003: :H:j26",
+      "DlId": "de:vvo:11-3",
+      "LineName": "3",
+      "Direction": "Wilder Mann",
+      "Platform": {
+        "Name": "2",
+        "Type": "Platform"
+      },
+      "Mot": "Tram",
+      "RealTime": "/Date(1791366120000-0000)/",
+      "ScheduledTime": "/Date(1791366120000-0000)/",
+      "State": "InTime",
+      "RouteChanges": [],
+      "Diva": {
+        "Number": "11003",
+        "Network": "voe"
+      },
+      "CancelReasons": [],
+      "Occupancy": "ManySeats"
+    }
+  ]
+}

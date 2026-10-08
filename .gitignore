@@ -1,0 +1,9 @@
+.direnv/
+.gem/
+.bundle/
+
+# trmnlp build output
+_build/
+
+# trmnlp test --report output
+report/

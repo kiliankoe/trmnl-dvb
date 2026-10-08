@@ -1,0 +1,9 @@
+---
+watch:
+- ".trmnlp.yml"
+- src
+custom_fields:
+  stop_id: '33000013'
+  view: grouped
+  walk_minutes: '7'
+time_zone: Europe/Berlin
