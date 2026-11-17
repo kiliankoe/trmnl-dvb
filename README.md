@@ -2,6 +2,8 @@
 
 A [TRMNL](https://trmnl.com) private plugin that shows upcoming departures for a stop in Dresden's public transport network (DVB/VVO).
 
+![a picture of the plugin in action](./media/pic.jpeg)
+
 TRMNL polls the [VVO departure monitor](https://github.com/kiliankoe/vvo/blob/main/documentation/webapi.md) and renders the Liquid templates in `src/`. The device refreshes about every 15 minutes, so the board shows absolute departure times instead of countdowns. Cancelled departures are struck through.
 
 The plugin has two views, picked in its settings:
